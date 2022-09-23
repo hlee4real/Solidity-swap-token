@@ -1,0 +1,139 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x2E983A1Ba5e8b38AAAeC4B440B9dDcFBf72E15d1",
+    "txHash": "0xbd36e9a9f922d2c354c7db16d55cee00c14d929826fe4fd7e5a4cf4c9d767ec9"
+  },
+  "proxies": [
+    {
+      "address": "0x94B75AA39bEC4cB15e7B9593C315aF203B7B847f",
+      "txHash": "0x184a230d75160f41ff65fe4bbaf08a05c78fc80706a0b4bf3a31190dfd51b0a4",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x6cffa31dd31cF649fb24AC7cEfE87579324bD89c",
+      "txHash": "0x7747e4ab8742b7f9531685e2daf39529cf5788d2f518adacc30d7cbfaca6dd34",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x8438Ad1C834623CfF278AB6829a248E37C2D7E3f",
+      "txHash": "0x7e533677d59a40a47e0f9af775825c48f341a740929fde6311f2a8c27048d3bf",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "69c7ee8c83ec2380e8066bd14c34bc2a85ae938cd364500a149665bf38a66143": {
+      "address": "0x663F3ad617193148711d28f5334eE4Ed07016602",
+      "txHash": "0xbe75a6991886358633ea3c0a99a3a61cbe3732c80ba2febc05ae116559f8baed",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "tokenRate",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_struct(Rate)1618_storage))",
+            "contract": "Swap",
+            "src": "contracts/Swap.sol:32"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_struct(Rate)1618_storage))": {
+            "label": "mapping(address => mapping(address => struct Swap.Rate))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(Rate)1618_storage)": {
+            "label": "mapping(address => struct Swap.Rate)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Rate)1618_storage": {
+            "label": "struct Swap.Rate",
+            "members": [
+              {
+                "label": "rate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "rateDecimals",
+                "type": "t_uint32",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint32": {
+            "label": "uint32",
+            "numberOfBytes": "4"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
